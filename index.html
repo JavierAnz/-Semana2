@@ -6,99 +6,120 @@
     <title>TAREA #2 FAW</title>
     <!-- google fonts-->
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=roboto"
     />
     <!-- Import Materialize.ccs-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link rel="stylesheet" href="CSS/styles.css" />
     <script src="JS/functions.js"></script>
   </head>
   <body>
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">TAREA #2</a>
+        <a href="#" class="brand-logo center">TAREA #2</a>
       </div>
     </nav>
-    <div id="Ex-box">
-      <h1>EJERCICIO #1</h1>
-      <label for="num1">Primer Número</label>
-      <input type="number" id="num1" />
-      <label for="num2">Segundo Número</label>
-      <input type="number" id="num2" />
-      <button onclick="calcularPotencia()">CALCULAR</button>
-      <h3 id="resultado-potencia"></h3>
-    </div>
-    <div id="Ex-box">
-      <h1>EJERCICIO #2</h1>
-      <label for="centigrados">Grados centigrados </label>
-      <input type="number" id="centigrados" />
-      <button onclick="Convert()">Convertir</button>
-      <h3 id="resultado_centigrados"></h3>
-    </div>
-    <div id="Ex-box">
-      <h1>Ejercicio 3</h1>
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" />
-      <button onclick="agregarNombre()">Agregar</button>
-      <label for="numLetras">Número de letras:</label>
-      <input type="number" id="numLetras" />
-      <button onclick="filtrarNombres()">Filtrar</button>
-      <h3>Nombres agregados:</h3>
-      <ul id="listaNombres"></ul>
-      <h3>Nombres con la cantidad de letras indicada:</h3>
-      <ul id="listaFiltrada"></ul>
-    </div>
-    <div id="Ex-box">
-      <h1>Ejercicio 4</h1>
-      <label for="fechaNacimiento">Fecha de nacimiento:</label>
-      <input type="date" id="fechaNacimiento" />
-      <br />
-      <button onclick="calcularEdad()">Calcular edad</button>
-      <br />
-      <h3 id="resultado_edad"></h3>
-    </div>
-    <div id="Ex-box">
-      <h1>Ejercicio 5</h1>
-      <label for="hilera">Hilera:</label>
-      <input type="text" id="hilera" />
-      <br />
-      <button onclick="contarPalabras()">Contar palabras</button>
-      <br />
-      <h3 id="resultado_palabras"></h3>
-    </div>
-    <div id="Ex-box">
-      <h1>Ejercicio 6</h1>
-      <label for="numero">Número:</label>
-      <input type="number" id="numero" />
-      <br />
-      <button onclick="agregarNumero()">Agregar</button>
-      <br />
-      <br />
-      <h3>Números agregados:</h3>
-      <ul id="listaNumeros"></ul>
-      <h3>Promedio:</h3>
-      <h3 id="resultado_promedio"></h3>
-    </div>
-    <div id="Ex-box">
-      <h1>Ejercicio 7</h1>
-      <label for="color">Color:</label>
-      <input type="color" id="color" />
-      <br />
-      <button onclick="mostrarColor()">Mostrar color</button>
-      <br />
-      <br />
-      <div id="cuadroColor"></div>
-
-      <script>
-        function mostrarColor() {
-          const color = document.getElementById("color").value;
-          const cuadroColor = document.getElementById("cuadroColor");
-          cuadroColor.style.backgroundColor = color;
-        }
-      </script>
+    <div id="content">
+      <div id="Ex-box">
+        <h1>EJERCICIO #1</h1>
+        <label for="num1">Primer Número</label>
+        <input type="number" id="num1" />
+        <br />
+        <label for="num2">Segundo Número</label>
+        <input type="number" id="num2" />
+        <div id="send">
+          <button onclick="calcularPotencia()">Calcular</button>
+        </div>
+        <h3 id="resultado-potencia"></h3>
+      </div>
+      <div id="Ex-box">
+        <h1>EJERCICIO #2</h1>
+        <label for="centigrados">Grados centigrados </label>
+        <input type="number" id="centigrados" />
+        <div id="send">
+          <button onclick="Convert()">Convertir</button>
+        </div>
+        <h3 id="resultado_centigrados"></h3>
+      </div>
+      <div id="Ex-box">
+        <h1>Ejercicio 3</h1>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" />
+        <br />
+        <div id="send">
+          <button onclick="agregarNombre()">Agregar</button>
+        </div>
+        <br />
+        <label for="numLetras">Número de letras:</label>
+        <input type="number" id="numLetras" />
+        <div id="send">
+          <button onclick="filtrarNombres()">Filtrar</button>
+        </div>
+        <h3>Nombres agregados:</h3>
+        <ul id="listaNombres"></ul>
+        <h3>Nombres con la cantidad de letras indicada:</h3>
+        <ul id="listaFiltrada"></ul>
+      </div>
+      <div id="Ex-box">
+        <h1>Ejercicio 4</h1>
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" />
+        <br />
+        <div id="send">
+          <button onclick="calcularEdad()">Calcular edad</button>
+        </div>
+        <br />
+        <h3 id="resultado_edad"></h3>
+      </div>
+      <div id="Ex-box">
+        <h1>Ejercicio 5</h1>
+        <label for="hilera">Hilera:</label>
+        <input type="text" id="hilera" />
+        <br />
+        <div id="send">
+          <button onclick="contarPalabras()">Contar palabras</button>
+        </div>
+        <br />
+        <h3 id="resultado_palabras"></h3>
+      </div>
+      <div id="Ex-box">
+        <h1>Ejercicio 6</h1>
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" />
+        <br />
+        <div id="send">
+          <button onclick="agregarNumero()">Agregar</button>
+        </div>
+        <br />
+        <br />
+        <h3>Números agregados:</h3>
+        <ul id="listaNumeros"></ul>
+        <h3>Promedio:</h3>
+        <h3 id="resultado_promedio"></h3>
+      </div>
+      <div id="Ex-box">
+        <h1>Ejercicio 7</h1>
+        <label for="color">Color:</label>
+        <input type="color" id="color" />
+        <br />
+        <div id="send">
+          <button onclick="mostrarColor()">Mostrar color</button>
+        </div>
+        <br />
+        <br />
+        <div id="cuadroColor">sfdfsd</div>
+        <script>
+          function mostrarColor() {
+            const color = parseInt(document.getElementById("color").value);
+            const cuadroColor = document.getElementById("cuadroColor");
+            cuadroColor.style.backgroundColor = color;
+          }
+        </script>
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,40 @@
+#Ex-box {
+    background-color:rgb(107, 115, 122);
+    border: 10px;
+    border-color: black;
+    border-radius: 12px;
+
+}
+#content {
+    padding: 4px;
+    background-color:aliceblue;
+    padding: 5px;
+}
+h1{
+    background-color: rgb(211, 211, 226);
+    text-align: center;
+    padding-bottom: 10px;
+}
+h3{
+    padding: 20px;
+}
+label{
+    font-size: 20px;
+    padding-left: 10px;
+    color: aliceblue;
+}
+#send{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+button{
+    font-style:;
+}
+body{
+    font-family: "roboto", sans-serif;
+}
+input{
+    margin-left: 20px;
+    background-color: beige;
+}
